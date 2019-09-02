@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-  - docker run ch3mjor/docker-react npm run test -- --coverage
+  - docker run ch3mjor/docker-react npm run test -- --coverage 
