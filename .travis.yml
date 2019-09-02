@@ -4,6 +4,6 @@ services:
 
 before_install:
   - docker build -t ch3mjor/docker-react -f Dockerfile.dev .
-
+ 
 script:
-  - docker run ch3mjor/docker-react npm run test -- --coverage
+  - docker run -e CI=true ch3mjor/docker-react npm run test -- --coverage
